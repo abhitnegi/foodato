@@ -17,7 +17,7 @@ function App() {
   }
   return (
     <>
-    <Router>
+    <Router basename='/coffee-ecommerce'>
       <Navbar getData={getData}/>
       <Routes>
         <Route path='/' element={<Home />}/>
