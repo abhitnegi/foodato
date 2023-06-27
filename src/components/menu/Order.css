@@ -78,15 +78,14 @@ button:hover{
     }
 
     .order{
+        margin-top: 10px;
         display: flex;
         justify-content: center;
         width: 30vw;
         height: 5vh;
-        position: relative;
-        bottom: 15px;
     }   
 
     .count{
-        margin-top: 46px;
+        margin-bottom: 46px;
     }
 }

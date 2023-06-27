@@ -185,15 +185,20 @@ a{
 }
 
 @media only screen and (max-width: 650px){
+    .searchbar{
+        display: flex;
+        align-items: center;
+    }
+
     .searchbar input{
-        width: 50vw;
-        height: 3vh;
+        width: 30vw;
+        height: 3.2vh;
         font-size: 16px;
     }
 
     .searchbar .search{
-        height: 3.6vh;
-        width: 6.5vw;
+        height: 3.7vh;
+        width: 10vw;
         font-size: 10px;
     }
 
@@ -244,5 +249,10 @@ a{
 
     .navbar{
         height: 7vh;
+        width: 100vw;
+    }
+
+    .navbar .right .user{
+        margin-right: 10px;
     }
 }

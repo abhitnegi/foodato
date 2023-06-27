@@ -5,7 +5,7 @@ import About from './components/about/About'
 import Footer from './components/footer/Footer';
 import Order from './components/menu/Order';
 import Cart from './components/cart/Cart';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import Give from './components/Order/Give';
 import Search from './components/search/Search';
 import { useState } from 'react';

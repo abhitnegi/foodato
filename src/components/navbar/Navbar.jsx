@@ -52,7 +52,7 @@ export default function Navbar(props) {
           <Link to='/about'>About</Link>
           {view ? <Link to='/menu'>Menu</Link> : <Link to='/order'>Order</Link>}  
         </div>
-        <button className='button' onClick={() => {setShowLinks(!showLinks)}}><DotsThree size={16}/></button>
+        <button className='button' onClick={() => {setShowLinks(!showLinks)}}><DotsThree size={30}/></button>
       </div>
       <div className="searchbar">
         <input type="text" placeholder='Search....' value={searches} onChange={(e) => setSearches(e.target.value)}/>
