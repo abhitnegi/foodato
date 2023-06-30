@@ -38,6 +38,10 @@ button:hover{
     border-radius: 5px;
 }
 
+@media only screen and (max-width: 650px) {
+    
+}
+
 @media only screen and (max-width: 650px){
     .shop-product {
         display: flex;
