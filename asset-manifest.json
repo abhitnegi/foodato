@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/foodato/static/css/main.2929ef0a.css",
-    "main.js": "/foodato/static/js/main.6bc5b3b2.js",
+    "main.js": "/foodato/static/js/main.6b03ff70.js",
     "static/media/3.webp": "/foodato/static/media/3.811d777a516c828a1937.webp",
     "static/media/4.webp": "/foodato/static/media/4.6b1d57a26a702d758813.webp",
     "static/media/2.webp": "/foodato/static/media/2.50bec5e5100de8fc4bfd.webp",
@@ -20,10 +20,10 @@
     "static/media/23.jpg": "/foodato/static/media/23.66c6d903b020abb8ef62.jpg",
     "index.html": "/foodato/index.html",
     "main.2929ef0a.css.map": "/foodato/static/css/main.2929ef0a.css.map",
-    "main.6bc5b3b2.js.map": "/foodato/static/js/main.6bc5b3b2.js.map"
+    "main.6b03ff70.js.map": "/foodato/static/js/main.6b03ff70.js.map"
   },
   "entrypoints": [
     "static/css/main.2929ef0a.css",
-    "static/js/main.6bc5b3b2.js"
+    "static/js/main.6b03ff70.js"
   ]
 }
