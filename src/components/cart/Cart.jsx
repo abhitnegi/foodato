@@ -28,10 +28,10 @@ const Cart = () => {
         {renderCart}      
       </div>
       {view>0 && <div className="bill">
-        <h3>PRODUCT</h3>          
-        <h3>QUANTITY </h3>         
-        <h3>PRICE</h3>         
-        <h3>TOTAL AMOUNT</h3>
+        <h4>PRODUCT</h4>          
+        <h4>QUANTITY </h4>         
+        <h4>PRICE</h4>         
+        <h4>TOTAL AMOUNT</h4>
       </div>} 
       <hr />
       {view === 0 && <h1 style={{textAlign: "center"}}>Cart Is Empty</h1>}
