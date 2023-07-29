@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/foodato/static/css/main.6669ac52.css",
+    "main.js": "/foodato/static/js/main.6bc5b3b2.js",
+    "static/media/3.webp": "/foodato/static/media/3.811d777a516c828a1937.webp",
+    "static/media/4.webp": "/foodato/static/media/4.6b1d57a26a702d758813.webp",
+    "static/media/2.webp": "/foodato/static/media/2.50bec5e5100de8fc4bfd.webp",
+    "static/media/1.webp": "/foodato/static/media/1.3343684d55067d417ca7.webp",
+    "static/media/6.webp": "/foodato/static/media/6.707a9814c5b03fff5793.webp",
+    "static/media/5.webp": "/foodato/static/media/5.7170ad83835aa3672513.webp",
+    "static/media/8.webp": "/foodato/static/media/8.ffc57bfd7fac80f2ddf5.webp",
+    "static/media/7.webp": "/foodato/static/media/7.9eadfab408f73c97e19b.webp",
+    "static/media/27.jpg": "/foodato/static/media/27.bc501753c3f3e1d944a5.jpg",
+    "static/media/7.jpg": "/foodato/static/media/7.c776c815863d276a1bfc.jpg",
+    "static/media/8.jpg": "/foodato/static/media/8.c844b37ecb3f5fd6e1ef.jpg",
+    "static/media/26.jpg": "/foodato/static/media/26.7d24edf7310be6a664e2.jpg",
+    "static/media/25.jpg": "/foodato/static/media/25.4977722ff8537f2522c9.jpg",
+    "static/media/14.jpg": "/foodato/static/media/14.366d90396374acae2379.jpg",
+    "static/media/5.jpg": "/foodato/static/media/5.5b8633dea01cda695e75.jpg",
+    "static/media/23.jpg": "/foodato/static/media/23.66c6d903b020abb8ef62.jpg",
+    "index.html": "/foodato/index.html",
+    "main.6669ac52.css.map": "/foodato/static/css/main.6669ac52.css.map",
+    "main.6bc5b3b2.js.map": "/foodato/static/js/main.6bc5b3b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6669ac52.css",
+    "static/js/main.6bc5b3b2.js"
+  ]
+}
