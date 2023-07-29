@@ -3,26 +3,21 @@ import { Link } from 'react-router-dom'
 import './Navbar.css'
 import { auth, provider } from '../../firebaseconfig'
 import { signInWithPopup, signOut } from "firebase/auth"
-import { useNavigate } from "react-router-dom"
 import { useAuthState } from "react-firebase-hooks/auth"
-import { useSelector } from 'react-redux'
-import { getAllOrders } from '../../features/slice/movieSlice'
-import { ShoppingCart, DotsThree, MagnifyingGlass } from "phosphor-react"
+import { ShoppingCart } from "phosphor-react"
+import { updateView } from '../../features/slice/movieSlice'
+import { useDispatch } from 'react-redux'
 
-export default function Navbar(props) {
-  const list = useSelector(getAllOrders)
-  const [ searches, setSearches ] = useState("") 
-  const [ showLinks, setShowLinks ] = useState(false) 
+export default function Navbar() {
+  const dispatch = useDispatch()
   const [ view, setView ] = useState(true)
     
   const [ user ] = useAuthState(auth) 
 
-  const navigate = useNavigate()
-
   const login = async (e) =>{
     e.preventDefault();
     await signInWithPopup (auth, provider);
-    navigate("/order")
+    dispatch(updateView())
     setView(!view)
   }
 
@@ -32,31 +27,13 @@ export default function Navbar(props) {
     setView(!view)
   }
 
-  const search = (e) => {
-    e.preventDefault();
-    if(searches === ""){
-      alert("Search Bar Empty")
-      // navigate("/")
-    }
-    else{navigate('/search')
-    setSearches("")
-    props.getData(searches)}
-  }
-  
   return (
     <>
     <div className='navbar'>
       <div className="left"> 
-        <div className="links" id={showLinks ? "hidden" : ""}>
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
-          {view ? <Link to='/menu'>Menu</Link> : <Link to='/order'>Order</Link>}  
+        <div className="links">
+          <Link to='/'>FOODATO</Link>
         </div>
-        <button className='button' onClick={() => {setShowLinks(!showLinks)}}><DotsThree size={30}/></button>
-      </div>
-      <div className="searchbar">
-        <input type="text" placeholder='Search....' value={searches} onChange={(e) => setSearches(e.target.value)}/>
-        <button className='search' onClick={search}><MagnifyingGlass size={20}/></button>
       </div>
       <div className="right">
         {!view && <Link to='/cart'><ShoppingCart size={25} className='cart-icon'/></Link>}

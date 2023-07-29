@@ -5,13 +5,14 @@ import { useDispatch } from 'react-redux';
 const CartItem = (props) => {
     const { data } = props;
     const dispatch = useDispatch();
+    
   return (
-    <div>
+    <>
       <div className="cart-products">
-        <img src={data.productImage} alt=""/>
+        <img src={data.image} alt=""/>
         <div className="cart-description">
             <p>
-                <b>{data.title}</b>
+                <b>{data.name}</b>
             </p>
             <p>
                 <b>{data.price}</b>
@@ -23,7 +24,7 @@ const CartItem = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

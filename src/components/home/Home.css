@@ -1,58 +1,97 @@
-img{
+.description{
     width: 100%;
     height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    justify-content: space-evenly;
 }
 
-.box{
-   display: flex;
+img{
+    width: 15vw;
+    height: 20vh;
+    border-radius: 5%;
 }
 
-.box .container{
-    display: flex;
-    padding: 35px 50px 50px 50px;
-    flex: 60%;
-    font-size: 20px;
+.description a:hover{
+    box-shadow: 1px 1px 5px 5px;
+    background-color: white;
+    border-radius: 5%;
 }
 
-.box .image{
-    display: flex;
-    flex: 20%;
+.dessert{
     width: 100%;
-    height: 40vh;
-    padding: 10px 20px 5px 5px;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    justify-content: space-evenly;
 }
 
-@media only screen and (max-width: 1200px){
-    .box .container{
-        font-size: 17px;
+.item{
+    padding: 13px;
+}
+
+.item:hover{
+    box-shadow: 1px 1px 5px 5px;
+    background-color: white;
+    border-radius: 5%;
+}
+
+.choose{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.choose .item{
+    margin: 3vh;
+}
+
+.choose .item img{
+    width: 20vw;
+    height: 25vh;
+}
+
+@media only screen and (max-width: 1200px) {
+    .dessert{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .description{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    img{
+        width: 25vw;
     }
 }
 
-@media only screen and (max-width: 992px){
-    .box .container{
-        font-size: 15px;
+@media only screen and (max-width: 750px){    
+    img{
+        width: 25vw;
+        height: 15vh;
     }
-}
 
-@media only screen and (max-width: 750px){
-    .box .container{
-        font-size: 13px;
+    .choose .item img{
+        width: 30vw;
+        height: 19vh;
     }
 }
 
 @media only screen and (max-width: 650px){
-    .box .image{
-        display: flex;
-        flex: 40%;
-        height: auto;
-        padding: 20px 20px 20px 0px;        
+    img{
+        width: 25vw;
+        height: 10vh;
     }
 
-    .box .container{
-        padding: 15px 20px 50px 20px;
-    }
-
-    p{
-        font-size: 11.9px;
+    .choose .item img{
+        width: 25vw;
+        height: 16vh;
     }
 }

@@ -1,8 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { PRODUCT } from "../../product";
+import { PRODUCTS } from "../../product";
 
 const initialState = {
-    order : PRODUCT
+    order : PRODUCTS,
+    view : true,
+    totalAmount: 0
 }
 
 const slice = createSlice({
@@ -30,9 +32,13 @@ const slice = createSlice({
                 }
             })
         },
+        updateView : (state) => {
+            state.view = false
+        },
     }
 })
 
-export const {addOrders, removeOrders, updateOrders} = slice.actions;
+export const {addOrders, removeOrders, updateOrders, updateView } = slice.actions;
 export default slice.reducer;
 export const getAllOrders = state => state.orders.order;
+export const getView = state => state.orders.view;

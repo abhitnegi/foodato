@@ -19,6 +19,7 @@
     flex-direction: column; 
     justify-content: center;
     align-items: center;
+    padding: 13px;
 }
 
 .cart-description input{
@@ -42,6 +43,52 @@
     margin-top: 10px;
 }
 
+.cart-products:hover{
+    box-shadow: 1px 1px 5px 5px;
+    background-color: white;
+    border-radius: 5%;
+}
+
+.bill{
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw 10vw;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.billing{
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw 10vw;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.total{
+    display: grid;
+    grid-template-columns: 21.9vw;
+    justify-content: flex-end;
+}
+
+.buttons{
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+}
+
+.buttons button{
+    width: 18vw;
+    height: 5vh;
+    border-radius: 5%;
+    background-color: rgb(15, 73, 121);
+    border: none;
+    color: white;
+    box-shadow: 1px 1px 5px 5px black;
+    font-size: 2vh;
+    cursor: pointer;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
 @media only screen and (max-width: 650px){
     .cart-product{
         display: flex;
@@ -59,5 +106,10 @@
         border: 2px solid black;
         box-shadow: 2px 2px 2px red;
         border-radius: 50%;
+    }
+
+    .buttons button{
+        font-size: 1.5vh;
+        width: 25vw;
     }
 }

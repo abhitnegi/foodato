@@ -79,36 +79,6 @@ a{
     display: block;
 }
 
-
-.searchbar{
-    margin: 12px;
-    display: flex;
-    flex-direction: row;
-}
-
-.searchbar input{
-    border-left : none;
-    border-right: none;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    height: 3.9vh;
-    width: 60vw;
-    padding-left: 20px;
-    font-size: 19px;
-    border-radius: 10px 0px 0px 10px;
-}
-
-.searchbar .search{
-    height: 4.4vh;
-    width: 4vw;
-    border-radius: 0px 10px 10px 0px;
-}
-
-.search{
-    border-radius: 0px 5px 5px 0px;
-    border: 1px solid black;
-}
-
 #hello{
     background: none;
 }
@@ -207,24 +177,6 @@ a{
         margin-left: 12px;
     }
 
-    .navbar .left .links{
-        display: none;
-    }
-
-    .navbar .left #hidden{
-        display: flex;
-        position: absolute; 
-        left: 0px;
-        top: 46px;
-        height: 200px;
-        width: 100%;
-        background-color: black;
-        flex-direction: column;
-        justify-content: center;
-        z-index: 1;
-        align-items: center;
-    }
-
     .navbar .right .drop button{
         width: 10vw;
     }
@@ -247,12 +199,7 @@ a{
         border: 1px solid black;
     }
 
-    .navbar{
-        height: 7vh;
-        width: 100vw;
-    }
-
     .navbar .right .user{
-        margin-right: 28px;
+       text-align: left;
     }
 }
