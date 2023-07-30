@@ -30,14 +30,6 @@
     text-align: center;
 }
 
-.empty{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-}
-
 .cart-title h1{
     text-align: center;
     margin-top: 10px;
@@ -113,7 +105,15 @@
         width: 25vw;
     }
 
-    .bill h3{
+    .bill h4{
+        font-size: 1.2vh;
+    }
+
+    .billing{
+        font-size: 1.2vh;
+    }
+
+    .total{
         font-size: 1.5vh;
     }
 }
